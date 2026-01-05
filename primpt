@@ -1,0 +1,206 @@
+# GitHub Copilot Prompts – Next.js Learning Project
+# Author: Jeevan R
+# Goal: Learn Next.js practically with backend-first mindset
+
+--------------------------------------------------
+GENERAL PROJECT CONTEXT (PASTE THIS FIRST)
+--------------------------------------------------
+
+I am a backend engineer (Python + Laravel) learning Next.js by building a real project.
+
+Project details:
+- Next.js 14 (App Router)
+- TypeScript + Tailwind CSS
+- Static product listing website
+- Admin panel to add/update products
+- Backend using Next.js API routes (Node.js)
+- PostgreSQL later with Prisma
+- Focus on clean architecture and fundamentals
+
+Rules:
+- Explain concepts briefly before coding
+- Keep code minimal and readable
+- Avoid advanced React patterns unless necessary
+- Treat API routes like Laravel controllers
+- Prefer server components unless client is required
+- Help me learn, not just generate code
+
+--------------------------------------------------
+UNDERSTANDING NEXT.JS BACKEND
+--------------------------------------------------
+
+Explain how backend works in Next.js App Router.
+
+Cover:
+- What are API routes
+- How they compare to Laravel controllers
+- Where business logic should live
+- How server components interact with APIs
+
+Do not write code yet.
+Explain the flow first.
+
+--------------------------------------------------
+API ROUTE – GET + POST PRACTICE
+--------------------------------------------------
+
+I want to create a Next.js API route for products.
+
+Requirements:
+- GET: return list of products
+- POST: add a new product
+- Simple validation (name, price)
+- Return JSON responses
+- Use TypeScript
+
+Before coding:
+1. Explain request lifecycle
+2. Explain folder structure
+3. Map this to Laravel (routes + controller)
+
+Then provide clean example code.
+
+--------------------------------------------------
+ADMIN PAGE PRACTICE
+--------------------------------------------------
+
+Help me build a simple admin page in Next.js.
+
+Context:
+- Route: /admin
+- Form to add product (name, price)
+- On submit, call POST API
+- Minimal UI
+- No advanced hooks
+
+Explain:
+1. Why this page must be a client component
+2. How form submission works
+3. Data flow: UI → API → response
+
+Then provide example code.
+
+--------------------------------------------------
+SERVER vs CLIENT COMPONENTS
+--------------------------------------------------
+
+Explain Server Components vs Client Components like I am a backend developer.
+
+Include:
+- When to use server components
+- When client components are mandatory
+- Common mistakes beginners make
+- How this compares to Blade / Django templates
+
+No code unless needed for clarity.
+
+--------------------------------------------------
+DATABASE INTEGRATION (PRISMA)
+--------------------------------------------------
+
+I am adding PostgreSQL + Prisma to my Next.js project.
+
+Constraints:
+- I come from Laravel & Django background
+- Explain Prisma like Eloquent / Django ORM
+- Start with Product model only
+- Keep schema simple
+
+Steps:
+1. Explain Prisma concepts
+2. Show schema.prisma
+3. Show basic CRUD usage in API route
+
+Avoid advanced Prisma features.
+
+--------------------------------------------------
+AUTHENTICATION (ADMIN ONLY)
+--------------------------------------------------
+
+I want to protect the /admin page.
+
+Requirements:
+- Simple admin authentication
+- Session-based or token-based
+- No over-engineering
+
+Explain:
+- Where auth logic should live
+- How middleware works in Next.js
+- Comparison with Laravel auth middleware
+
+Then show minimal implementation.
+
+--------------------------------------------------
+ERROR-DRIVEN LEARNING PROMPT (USE DAILY)
+--------------------------------------------------
+
+I got this error while running my Next.js app:
+
+<PASTE ERROR HERE>
+
+Tasks:
+1. Explain the error in simple terms
+2. Tell me why it happened
+3. Show how to fix it
+4. Tell me how to avoid it next time
+
+Do not assume frontend expertise.
+
+--------------------------------------------------
+STRICT LEARNING GUARDRAIL (VERY IMPORTANT)
+--------------------------------------------------
+
+You are my senior reviewer.
+
+Before giving code:
+- Tell me what I should implement myself
+- Tell me what Copilot can generate safely
+- Warn me if I am skipping fundamentals
+- Prefer learning over speed
+
+Be strict. I want real understanding.
+
+--------------------------------------------------
+CODE REVIEW PROMPT
+--------------------------------------------------
+
+Review the following Next.js code:
+
+<PASTE CODE HERE>
+
+Check for:
+- Correct server/client usage
+- Clean structure
+- Backend best practices
+- Unnecessary complexity
+- Laravel/Python developer mistakes
+
+Suggest improvements with reasoning.
+
+--------------------------------------------------
+DEPLOYMENT (VERCEL)
+--------------------------------------------------
+
+Guide me to deploy this Next.js app to Vercel.
+
+Explain:
+- What happens during build
+- How environment variables work
+- Node version handling
+- Common deployment issues
+
+Give step-by-step guidance.
+
+--------------------------------------------------
+FINAL CONFIRMATION PROMPT
+--------------------------------------------------
+
+Based on my current project structure and skills:
+
+- Am I using Next.js correctly?
+- What should I improve next?
+- What should I NOT learn right now?
+- Is this project good enough for production / portfolio?
+
+Answer honestly like a senior engineer.
